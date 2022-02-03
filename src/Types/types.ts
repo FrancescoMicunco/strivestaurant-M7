@@ -24,3 +24,13 @@ export interface IComment {
     author: string
     date: string
 }
+
+export interface IReservation {
+    name:string
+    phone:number
+    numberOfPeople:number
+    smoking:boolean
+    dateTime?:number
+    specialRequest:string
+    
+}

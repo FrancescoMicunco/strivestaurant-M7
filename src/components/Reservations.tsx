@@ -5,7 +5,7 @@ import Alert from 'react-bootstrap/Alert'
 import { parseISO, format } from 'date-fns'
 
 const Reservations = () => {
-  const [reservations, setReservations] = useState([])
+  const [reservations, setReservations] = useState<IReservation[]>([])
   const [isLoading, setIsLoading] = useState(true)
   const [isError, setIsError] = useState(false)
 
