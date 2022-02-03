@@ -9,21 +9,28 @@ import Booking from './components/Booking'
 import Details from './components/Details'
 
 function App() {
-  return (
-    <div>
-      <BrowserRouter>
-        <MyNavbar brand='Strivestaurant' />
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/profile' element={<h1>PROFILE PAGE</h1>} />
-          <Route path='/reservations' element={<Booking />} />
-          <Route path='/menu' element={<Menu />} />
-          <Route path='/details/:pastaId' element={<Details />} />
-          <Route path='*' element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
-    </div>
-  )
+    return ( <
+        div >
+        <
+        BrowserRouter >
+        <
+        MyNavbar brand = 'Strivestaurant' / >
+        <
+        Routes >
+        <
+        Route path = '/'
+        element = { < Home / > }
+        /> { /* <Route path='/profile' element={<h1>PROFILE PAGE</h1>} /> */ } { /* <Route path='/reservations' element={<Booking />} /> */ } <
+        Route path = '/menu'
+        element = { < Menu / > }
+        /> { /* <Route path='/details/:pastaId' element={<Details />} /> */ } <
+        Route path = '*'
+        element = { < NotFound / > }
+        /> <
+        /Routes> <
+        /BrowserRouter> <
+        /div>
+    )
 }
 
 export default App
