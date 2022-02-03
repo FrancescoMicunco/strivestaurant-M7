@@ -6,8 +6,8 @@ export interface IDish {
      category:string 
      label: string
      price:string
-     dishDescription: string
-     comments: string
+     description: string
+     comments: IComment[]
 
     // enum CodingKeys: String, CodingKey {
     //     case id, name, image, category, label, price

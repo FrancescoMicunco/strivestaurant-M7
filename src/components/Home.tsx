@@ -2,10 +2,12 @@ import { useState } from 'react'
 import { Carousel, Container, Col, Row } from 'react-bootstrap'
 import items from '../data/menu.json'
 import DishComments from './DishComments'
+import { IDish } from '../Types/types'
+
 
 const Home = () => {
-  const [selectedDish, setSelectedDish] = useState(undefined)
-
+  const [selectedDish, setSelectedDish] = useState<IDish | null>(null)
+// const v = v2 ?? "k"
   return (
     <Container>
       <Row className='mt-3 justify-content-center'>
